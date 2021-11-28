@@ -13,6 +13,7 @@ cockroach_speed(2.13) -> 59
 """
 import math
 
+
 def cockroach_speed(kmh_speed: float) -> int:
     """Переводит скорость таракана из км/ч в см/с
 
