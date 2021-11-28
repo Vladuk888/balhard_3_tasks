@@ -10,8 +10,7 @@
 ПРИМЕРЫ
 --------------------------------------------------------------------------------
 - square(12) -> (48, 144, 16.970562748477143)
-- square(7) -> (28, 49, 9.899494936611665)
-"""
+- square(7) -> (28, 49, 9.899494936611665)"""
 
 
 def square(side: str) -> tuple:
@@ -23,9 +22,10 @@ def square(side: str) -> tuple:
     :return: Кортеж (Периметр, Площадь, Диагональ)
     :rtype: tuple
     """
-    perimeter = None
-    s_square = None
-    diagonal = None
+    side = float(side)
+    perimeter = side * 4
+    s_square = side ** 2
+    diagonal = side * 2 ** 0.5
     return perimeter, s_square, diagonal
 
 
